@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- <script src="https://use.fontawesome.com/fad6d40055.js"></script> -->
-    
+
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -18,15 +18,15 @@
     <div class="container-fluid">
         <div class="row">
 
-            <div class="col">
+            <div class="col docs-content">
                 <nav id="navbar">
                     <ul class="nav flex-column">
-                        <header>Bootstrap Documentation</header>
+                        <header>HR LITE Documentation</header>
                         <li class="nav-item">
                             <a class="nav-link introduction" href="#Introduction">Introduction</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link layout" href="#Layout">Layout</a>
+                            <a class="nav-link layout" href="#Layout">Health & Safety</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link content" href="#Content">Content</a>
@@ -41,10 +41,10 @@
                 </nav>
             </div>
 
-            <div class="col-md-9">
+            <div class="col-md-9 docs-content">
                 <main id="main-doc">
                     <div class="head-box">
-                        <h1>BOOTSTRAP</h1>
+                        <h1>PERSOL HCM - HR LITE</h1>
                     </div>
 
                     <section class="main-section" id="Introduction">
@@ -68,7 +68,7 @@
 
                     <section class="main-section" id="Layout">
                         <header>
-                            <h2>Layout</h2>
+                            <h2>Health & Safety</h2>
                         </header>
                         <article>
                             <h3>Containers</h3>
@@ -79,17 +79,15 @@
                             <p>While containers can be nested, most layouts do not require a nested container.</p>
 
                             <pre>
-      <code>
-      &lt;div class="container">&lt;/div&gt;</code>
-    </pre>
+                                <code>&lt;div class="container">&lt;/div&gt;</code>
+                            </pre>
 
                             <p>Use <code class="highlight-rouge">.container-fluid</code> for a full width container,
                                 spanning the entire width of the viewport.</p>
 
                             <pre>
-      <code>
-      &lt;div class="container-fluid">...&lt;/div&gt;</code>
-    </pre>
+                                <code>&lt;div class="container-fluid">...&lt;/div&gt;</code>
+                            </pre>
 
                             <h3>Z-index</h3>
                             <p>Several Bootstrap components utilize <code class="highlight-rouge">z-index</code>, the
@@ -105,15 +103,16 @@
                             </p>
 
                             <pre>
-      <code>
-      $zindex-dropdown:          1000 !default;
-  $zindex-sticky:            1020 !default;
-  $zindex-fixed:             1030 !default;
-  $zindex-modal-backdrop:    1040 !default;
-  $zindex-modal:             1050 !default;
-  $zindex-popover:           1060 !default
-  $zindex-tooltip:           1070 !default;</code>
-    </pre>
+                                <code>
+                                    $zindex-dropdown:          1000 !default;
+                                    $zindex-sticky:            1020 !default;
+                                    $zindex-fixed:             1030 !default;
+                                    $zindex-modal-backdrop:    1040 !default;
+                                    $zindex-modal:             1050 !default;
+                                    $zindex-popover:           1060 !default
+                                    $zindex-tooltip:           1070 !default;
+                                </code>
+                            </pre>
 
                         </article>
                     </section>
@@ -127,33 +126,30 @@
                             <p>Reboot builds upon Normalize, providing many HTML elements with somewhat opinionated
                                 styles using only element selectors. Additional styling is done only with classes. For
                                 example, we reboot some &lt;table&gt; styles for a simpler baseline and later provide
-                                <code class="highlight-rouge">.table</code>, <code
-                                    class="highlight-rouge">.table-bordered</code>, and more.</p>
-                            <ul>
+                                <code class="highlight-rouge">.table</code>, <code class="highlight-rouge">.table-bordered</code>, and more.</p>
+                            <ul class="ordered-list">
                                 <li>Update some browser default values to use <code class="highlight-rouge">rem</code>s
                                     instead of <code class="highlight-rouge">em</code>s for scalable component spacing.
                                 </li>
                                 <li>Avoid <code class="highlight-rouge">margin-top</code>. Vertical margins can
                                     collapse, yielding unexpected results. More importantly though, a single direction
                                     of <code class="highlight-rouge">margin</code> is a simpler mental model.</li>
-                                <li>For easier scaling across device sizes, block elements should use <code
-                                        class="highlight-rouge">rem</code>s for <code
-                                        class="highlight-rouge">margin</code>s.</li>
+                                <li>For easier scaling across device sizes, block elements should use <code class="highlight-rouge">rem</code>s
+                                    for <code class="highlight-rouge">margin</code>s.</li>
                             </ul>
-
+                        
                             <h3>Page defaults</h3>
-                            <p>The <code class="highlight-rouge">&lt;html&gt;</code> and <code
-                                    class="highlight-rouge">&lt;body&gt;</code> elements are updated to provide better
+                            <p>The <code class="highlight-rouge">&lt;html&gt;</code> and <code class="highlight-rouge">&lt;body&gt;</code>
+                                elements are updated to provide better
                                 page-wide defaults. More specifically:</p>
-                            <ul>
+                            <ul class="ordered-list">
                                 <li>The <code class="highlight-rouge">box-sizing</code> is globally set on every
                                     element—including <code class="highlight-rouge">*::before</code> and <code
-                                        class="highlight-rouge">*::after</code>, to <code
-                                        class="highlight-rouge">border-box</code>. This ensures that the declared width
+                                        class="highlight-rouge">*::after</code>, to <code class="highlight-rouge">border-box</code>. This
+                                    ensures that the declared width
                                     of element is never exceeded due to padding or border.</li>
                                 <li>The <code class="highlight-rouge">&lt;body&gt;</code> also sets a global <code
-                                        class="highlight-rouge">font-family</code>, <code
-                                        class="highlight-rouge">line-height</code>, and <code
+                                        class="highlight-rouge">font-family</code>, <code class="highlight-rouge">line-height</code>, and <code
                                         class="highlight-rouge">text-align</code>. This is inherited later by some form
                                     elements to prevent font inconsistencies.</li>
                                 <li>For safety, the <code class="highlight-rouge">&lt;body&gt;</code> has a declared
@@ -161,19 +157,18 @@
                                         class="highlight-rouge">#fff</code>.
                                 </li>
                             </ul>
-
+                        
                             <h3>Preformatted text</h3>
                             <p>The <code class="highlight-rouge">&lt;pre&gt;</code> element is reset to remove its <code
-                                    class="highlight-rouge">margin-top</code> and use <code
-                                    class="highlight-rouge">rem</code> units for its <code
-                                    class="highlight-rouge">margin-bottom</code>.</p>
-
+                                    class="highlight-rouge">margin-top</code> and use <code class="highlight-rouge">rem</code> units for its
+                                <code class="highlight-rouge">margin-bottom</code>.</p>
+                        
                             <pre>
-      <code>
-      .example-element {
-  margin-bottom: 1rem;
-  }</code>
-    </pre>
+                              <code>
+                              .example-element {
+                          margin-bottom: 1rem;
+                          }</code>
+                            </pre>
                         </article>
                     </section>
 
@@ -244,7 +239,7 @@
                         <article>
                             <p>All the documentation in this page was taken from <a
                                     href="https://getbootstrap.com/docs/4.0/getting-started/introduction/"
-                                    target="_blank">Get Bootstrap</a>.</p>
+                                    target="_blank">Persol Official Website</a>.</p>
                         </article>
                     </section>
                 </main>
@@ -259,7 +254,7 @@
                         <a href="https://www.freecodecamp.org/linh4" target="_blank">
                             <span class="icon"><i class="fa fa-free-code-camp"></i></span></a>
                     </div>
-                    <p>&copy 2018 Linh Huynh</p>
+                    <p>&copy 2020 Persol Systems Limited</p>
                 </footer>
 
             </div>
